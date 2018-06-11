@@ -1,0 +1,42 @@
+<templateSet group="PHP">
+  <template name="logit" value="\Log::debug($DEBUG$);" description="Debug" toReformat="false" toShortenFQNames="true">
+    <variable name="DEBUG" expression="" defaultValue="'here'" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="logarray" value="\Log::debug(json_decode(json_encode($DEBUG$),true));" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="DEBUG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="strict" value="declare(strict_types = 1);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_eventTest" value="/**&#10; * @test&#10; */&#10;public function check_one_event_fired()&#10;{&#10;    $this-&gt;assertCount(1, $this-&gt;getEvents());&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_eventS" value="/**&#10; * @test&#10; */&#10;public function check_event_serializer()&#10;{&#10;    $this-&gt;assertEquals($EVENTCLASS$::deserialize($this-&gt;getEvents()[$EVENTNUMBER$]-&gt;serialize()),&#10;                        $this-&gt;getEvents()[$EVENTNUMBER$]);&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="EVENTCLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EVENTNUMBER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="(s" value="(string" description="string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_t" value=" /**&#10; * @test&#10; */&#10;public function $NAME$()&#10;{&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

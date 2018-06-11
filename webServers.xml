@@ -1,0 +1,9 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="699cb1cf-efd6-4e38-9430-c658cb7d6ae4" name="Test" url="http://fullrent.local">
+        <fileTransfer mountedRoot="$USER_HOME$/projects/fullrent/app/public" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</application>

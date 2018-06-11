@@ -1,0 +1,13 @@
+<templateSet group="JavaScript">
+  <template name="ajax" value=" $.ajax({&#10;    url: '',&#10;    dataType: 'json',&#10;    method: 'POST',&#10;    data: {}&#10;}).success(function(response){&#10;&#10;});" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="jsClass" value="import React from 'react'&#10;&#10;var $NAME$ = React.createClass({&#10;    render() {&#10;        return (&#10;          &lt;div&gt;&#10;          &lt;/div&gt;&#10;        )&#10;    }&#10;});&#10;&#10;export default $NAME$&#10;" description="JsClass" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

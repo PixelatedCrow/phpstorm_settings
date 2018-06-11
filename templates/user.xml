@@ -1,0 +1,55 @@
+<templateSet group="user">
+  <template name="_c" value="public function __construct($END$)&#10;{&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for($i = 0; $i &lt; $COUNT$; $i++) {&#10;     $END$   &#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="COUNT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+    </context>
+  </template>
+  <template name="try" value="try{&#10;    $END$&#10;}catch($EX$ $ex){&#10;    &#10;}" description="try catch Block" toReformat="false" toShortenFQNames="true">
+    <variable name="EX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_f" value="public function $NAME$($PARMS$)&#10;{&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_sf" value="public static function $NAME$($PARMS$)&#10;{&#10;    $MODEL$ = new static();&#10;    $END$&#10;    return $MODEL$;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_if" value="public function $NAME$($END$);" description="InterFace Function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_vo" value="    /**&#10;     * @var string&#10;     */&#10;    private $$$NAME$;&#10;&#10;    /**&#10;     * @param string $$$NAME$&#10;     */&#10;    public function __construct($$$NAME$)&#10;    {&#10;        $this-&gt;$NAME$ = $$$NAME$;&#10;    }&#10;&#10;    /**&#10;     * @return string&#10;     */&#10;    public function get$NAME$()&#10;    {&#10;        return $this-&gt;$NAME$;&#10;    }&#10;&#10;    /**&#10;     * @param array $data&#10;     * @return static The object instance&#10;     */&#10;    public static function deserialize(array $data)&#10;    {&#10;        return new static($data['$NAME$']);&#10;    }&#10;&#10;    /**&#10;     * @return array&#10;     */&#10;    public function serialize()&#10;    {&#10;        return ['$NAME$' =&gt; $this-&gt;$NAME$];&#10;    }" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_pf" value="protected function $NAME$($PARMS$)&#10;{&#10;    $END$&#10;}" description="protected fucntion" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,28 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="PHP">
+        <added pattern="\get_class(object)" />
+        <added pattern="\Illuminate\Database\Connection.table(table)" />
+      </blacklist>
+      <blacklist language="SQL">
+        <removed pattern="*Exception" />
+        <removed pattern="(begin*, end*)" />
+        <removed pattern="(start*, end*)" />
+        <removed pattern="(first*, last*)" />
+        <removed pattern="(first*, second*)" />
+        <removed pattern="(from*, to*)" />
+        <removed pattern="(min*, max*)" />
+        <removed pattern="(key, value)" />
+        <removed pattern="(format, arg*)" />
+        <removed pattern="(message)" />
+        <removed pattern="(message, error)" />
+        <removed pattern="define(*,*)" />
+        <removed pattern="*.add(*)" />
+        <removed pattern="*.set(*,*)" />
+        <removed pattern="*.get(*)" />
+        <removed pattern="*.contains(*)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>
