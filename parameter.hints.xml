@@ -4,6 +4,7 @@
       <blacklist language="PHP">
         <added pattern="\get_class(object)" />
         <added pattern="\Illuminate\Database\Connection.table(table)" />
+        <added pattern="\Illuminate\Support\Facades\Storage.disk(name)" />
       </blacklist>
       <blacklist language="SQL">
         <removed pattern="*Exception" />
