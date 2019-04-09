@@ -39,4 +39,10 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="_l" value="function($PARAM$){&#10;    $END$&#10;}" description="build function" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
