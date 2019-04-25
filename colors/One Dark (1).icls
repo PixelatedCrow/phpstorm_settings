@@ -1,7 +1,7 @@
 <scheme name="One Dark" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="modified">2019-04-25T10:37:41</property>
+    <property name="modified">2019-04-25T10:57:17</property>
     <property name="rainbow Default language">true</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.3" />
@@ -180,7 +180,6 @@
     </option>
     <option name="DEFAULT_BRACES">
       <value>
-        <option name="BACKGROUND" value="8d9396" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -669,8 +668,48 @@
         <option name="FOREGROUND" value="e05d5c" />
       </value>
     </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR0">
+      <value>
+        <option name="FOREGROUND" value="9c82" />
+      </value>
+    </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR1">
+      <value>
+        <option name="FOREGROUND" value="2ea137" />
+      </value>
+    </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR3">
+      <value>
+        <option name="FOREGROUND" value="3749ca" />
+      </value>
+    </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR4">
+      <value>
+        <option name="FOREGROUND" value="d89881" />
+      </value>
+    </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value />
+    </option>
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR0">
+      <value>
+        <option name="FOREGROUND" value="ba9b" />
+      </value>
+    </option>
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR1">
+      <value>
+        <option name="FOREGROUND" value="30a639" />
+      </value>
+    </option>
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
+      <value>
+        <option name="FOREGROUND" value="384ace" />
+      </value>
+    </option>
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
+      <value>
+        <option name="FOREGROUND" value="d89881" />
+      </value>
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
       <value>
