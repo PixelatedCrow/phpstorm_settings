@@ -14,7 +14,12 @@
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="30807247-a39f-437a-ad55-3bd0b49c069a" name="PHP 7.1" home="/usr/local/Cellar/php71/7.1.0_11/bin/php" debugger_id="php.debugger.XDebug" />
-      <interpreter id="6905059b-18f6-40bf-9263-462e978fdada" name="PHP 7.2" home="/usr/local/bin/php" debugger_id="php.debugger.XDebug" debugger_extension="/usr/local/Cellar/php/7.2.5/pecl/20170718/xdebug.so" />
+      <interpreter id="6905059b-18f6-40bf-9263-462e978fdada" name="PHP 7.2" home="/usr/local/bin/php" debugger_id="php.debugger.XDebug" debugger_extension="/usr/local/Cellar/php/7.2.5/pecl/20170718/xdebug.so">
+        <configuration_options>
+          <configuration_option name="xdebug.profiler_enable" value="1" />
+          <configuration_option name="xdebug.profiler_output_dir" value="$USER_HOME$/work/hotsnapperltd/influence.network/debug" />
+        </configuration_options>
+      </interpreter>
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
